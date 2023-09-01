@@ -1,0 +1,384 @@
+
+/* RESPONSIVE WEBSITE*/
+
+@media (max-width: 420px) {
+
+    #cursor{
+        height: 2%;
+        width: 2%;
+        background-color: rgba(0, 218, 247, 0.63);
+        border-radius: 50%;
+        position: fixed;
+        z-index: 99;
+    }
+    #cursor-blur{
+        height: 100px;
+        width: 100px;
+        background-color: rgba(255, 255, 255, 0.911);
+        border-radius: 50%;
+        position: fixed;
+        z-index: 99;
+        filter: blur(50px);
+        z-index: 9;
+    }
+    #nav{
+        height: 10vh;
+        width: 100%;
+        /*background-color: red;*/
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        position: fixed;
+        justify-content: flex-start;
+        padding: 0 1%;
+        z-index: 99;
+        transition: 0.5s;
+    }
+    #nav img{
+        max-height: 30%;
+        max-width: 20%;
+        filter: brightness(1.5);
+        margin-top: 20px;
+    }
+    #nav a{
+        display: none;
+        
+    }
+    #nav .menu-toggle{
+        display: block;
+    }
+    
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+    }
+    
+    #main{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.80);
+    
+    }
+    #page1{
+        height: 100vh;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        
+    }
+    #page1 h1{
+        font-size: 10vh;
+        font-weight: 900;
+        position: relative;
+    }
+    #page1 h1::before{
+        content: "EAT.रट्टा.EXAM.REPEAT";
+        position: absolute;
+        color: black;
+        top: -5px;
+        left: -5px;
+        -webkit-text-stroke: 1px rgb(0, 183, 255);
+        z-index: -1;
+    
+    }
+    #page1 h2{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    #page1 h3{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    #page1 h4{
+        font-size: 20px;
+        font-weight: 900;
+        width: 50%;
+        text-align: center;
+    }
+    #page2{
+        height: 60vh;
+        width: 100%;
+        z-index: 10;
+    }
+    #scroller{
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        z-index: 10;
+        position: relative;
+    }
+    #scroller::-webkit-scrollbar{
+        display: none;
+    }
+    #scroller-in{
+        display: inline-block;
+        white-space: nowrap;
+        animation-name: scroll;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    
+    
+    }
+    
+    #scroller h4{
+        display: inline-block;
+        font-size: 140px;
+        font-weight: 500;
+        font-family: gilroy;
+        margin-right: 10px;
+        transition: all linear 0.5s;
+        -webkit-text-stroke: 2px rgb(0, 183, 255);
+        color: transparent;
+    }
+    #scroller h4:hover{
+        color: aqua;
+    }
+    @keyframes scroll {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+        
+    }
+    #aboutus{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        padding: 0 50px;
+    }
+    #aboutus #child1{
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #aboutus #child1 img{
+        height: 60%;
+        width: 60%;
+        align-items: center;
+        border-radius: 20px 30px 40px 10px;
+        position: relative;
+        
+        
+    }
+    
+    #aboutus #child1 img:hover{
+        transform: rotate3d(-1,1,0,20deg);
+        transition: all ease 0.6s;
+        height: 63%;
+        width: 63%;
+        
+    }
+    #aboutus-in{
+        width: 50%;
+        text-align: center;
+    }
+    #aboutus-in h3{
+        font-size: 54px;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+    #aboutus-in p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .addmisson{
+        height: 100vh;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    .addmisson .card{
+        position: relative;
+        height: 80vh;
+        justify-content: center;
+        max-width: 450px;
+        align-items: center;
+        background: black;
+        overflow: hidden;
+        margin: 10px;
+        padding: 15px;
+        border: 2px solid rgb(0, 183, 255);
+        border-radius: 10px;
+    
+    }
+    .addmisson .card .imgbx{
+        max-width: 150px;
+        flex: 0 0 150px;
+    }
+    .addmisson .card .imgbx img{
+        max-width: 100%;
+        height: 25vh;
+        width: 600px;
+    }
+    .addmisson .card .content{
+        margin-top: 10px;
+        margin-inline: 10px;
+    }
+    .addmisson .card .content h1{
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 30px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .addmisson .card .content p{
+        line-height: 26px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .addmisson:hover .card{
+        filter: blur(10px);
+    }
+    .addmisson .card:hover{
+        filter: blur(0px);
+        height: 90vh;
+        max-width: 550px;
+        transition: all ease 0.5s;
+    
+    }
+    #page3{
+        height: 100vh;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    #page3>p{
+        font-size: 30px;
+        font-weight: 700;
+        width: 55%;
+        text-align: center;
+        line-height: 45px;
+    }
+    #page3 img{
+        position: absolute;
+        height: 60px;
+        color: aqua;
+    }
+    #page3 #colon1{
+        left: 15%;
+        top: 25%;
+    }
+    #page3 #colon2{
+        bottom: 30%;
+        right: 15%;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        background-color: #10c6eb;
+        opacity: 1;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .social_icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    footer .social_icon li{
+        list-style: none;
+    }
+    footer .social_icon li a{
+        font-size: 10px;
+        color: #000;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    footer .social_icon li ion-icon{
+        font-size: 30px;
+    }
+    
+    footer .social_icon li ion-icon:hover{
+        transform: translateY(-10px); 
+        transition: all ease 0.5s;  
+    }
+    footer p{
+        text-align: center;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 10;
+    }
+    footer .wave{
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(wave.png);
+        filter: brightness(0) saturate(100%) invert(69%) sepia(32%) saturate(3934%) hue-rotate(147deg) brightness(97%) contrast(91%);
+        background-size: 1000px 100px ;
+    }
+    footer .wave#wave1{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    footer .wave#wave2{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave_2 4s linear infinite;
+    }
+    footer .wave#wave3{
+        z-index: 899;
+        opacity: 0.8;
+        bottom: 10px;
+        animation: animateWave_3 4s linear infinite;
+    }
+    @keyframes animateWave
+    {
+        0%{
+            background-position-x: 1000px;
+        }
+        100%{
+            background-position-x: 0px;
+        }
+    }
+    
+    @keyframes animateWave_2
+    {
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x: 1000px;
+        }
+    }
+    @keyframes animateWave_3
+    {
+        0%{
+            background-position-x: 900px;
+        }
+        100%{
+            background-position-x: 0px;
+        }
+    }
+    
+}
