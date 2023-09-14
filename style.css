@@ -254,6 +254,87 @@ video{
     font-size: 20px;
     line-height: 26px;
 }
+
+#masters{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+#masters #child3{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -5vw;
+}
+#masters #child3 img{
+    height: 30%;
+    width: 30%;
+    align-items: center;
+    border-radius: 20px 30px 40px 10px;
+    position: relative;
+    
+    
+    
+}
+
+#masters #child3 img:hover{
+    transform: rotate3d(-1,1,0,20deg);
+    transition: all ease 0.6s;
+    height: 33%;
+    width: 33%;
+    
+}
+
+
+#masters #child4{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 10vw;
+}
+#masters #child4 img{
+    height: 60%;
+    width: 60%;
+    align-items: center;
+    border-radius: 20px 30px 40px 10px;
+    position: relative;
+    
+    
+    
+}
+
+#masters #child4 img:hover{
+    transform: rotate3d(-1,1,0,20deg);
+    transition: all ease 0.6s;
+    height: 63%;
+    width: 63%;
+    
+}
+
+
+#masters h3{
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    margin-right: 13vw;
+}
+
+
+
+
+
+
+
+
 .addmisson{
     height: 100vh;
     position: relative;
@@ -699,6 +780,83 @@ footer .wave#wave3{
 
     }
 
+    /* Teachers*/
+
+    #masters{
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        padding: 0 50px;
+        display: list-item;
+    }
+    #masters #child3{
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+        
+        
+    }
+    #masters #child3 img{
+        height: 60%;
+        width: 60%;
+        align-items: center;
+        border-radius: 20px 30px 40px 10px;
+        position: relative;
+        
+        
+    }
+    #masters #child4{
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+        bottom: 8vh;
+    }
+    #masters #child4 img{
+        height: 60%;
+        width: 60%;
+        align-items: center;
+        border-radius: 20px 30px 40px 10px;
+        position: relative;
+        top: 1vh;
+        
+        
+    }
+    
+    #masters #child3 img:hover{
+        transform: rotate3d(-1,1,0,20deg);
+        transition: all ease 0.6s;
+        height: 63%;
+        width: 63%;
+        
+    }
+    #masters #child4 img:hover{
+        transform: rotate3d(-1,1,0,20deg);
+        transition: all ease 0.6s;
+        height: 63%;
+        width: 63%;
+        
+    }
+    
+    #masters h3{
+        font-size: 7vw;
+        font-weight: 800;
+        color: aqua;
+        text-align: center;
+        margin-top: 3vh;
+        padding-left: 0.5vw;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    
 
     .addmisson{
         height: 190vh;
